@@ -26,7 +26,12 @@ let circle = document.getElementById("circle");
            circle.style.transform = rotateSum;
            rotateValue = rotateSum;
            index = index < 3 ? index + 1 : 0;
-           document.getElementById("info-img").src = getSrc();
+           document.getElementById("info-img").classList.remove("rotate-up")
+           document.getElementById("info-img").classList.remove("rotate-down")
+           setTimeout(() => {
+                document.getElementById("info-img").src = getSrc();
+               document.getElementById("info-img").classList.add("rotate-up")
+           }, 100);
            for (const slideCaption of slideCaptions) {
               slideCaption.classList.remove("slide__caption--active")
            }
@@ -40,9 +45,14 @@ let circle = document.getElementById("circle");
            circle.style.transform = rotateSum;
            rotateValue = rotateSum;
            index = index > 0 ? index - 1 : 3;
-           document.getElementById("info-img").src = getSrc();
+           document.getElementById("info-img").classList.remove("rotate-up")
+           document.getElementById("info-img").classList.remove("rotate-down")
+           setTimeout(() => {
+                document.getElementById("info-img").src = getSrc();
+               document.getElementById("info-img").classList.add("rotate-down")
+           }, 100);
            for (const slideCaption of slideCaptions) {
-              slideCaption.classList.remove("slide__caption--active")
+            slideCaption.classList.remove("slide__caption--active")
            }
            let slideCaption = document.getElementById("slide__caption--" + index);
            if (slideCaption) {
