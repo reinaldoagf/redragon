@@ -1,22 +1,21 @@
 @font-face {
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     font-style: normal;
     font-weight: 400;
     src: url(https://example.com/MaterialIcons-Regular.eot);
     /* For IE6-8 */
-    src: local('Material Icons'),
-        local('MaterialIcons-Regular'),
-        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+    src: local("Material Icons"), local("MaterialIcons-Regular"),
+        url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+        url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+        url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 :root {
     --white-color: #fff;
-    --red-color: #E51B27;
+    --red-color: #e51b27;
     --gray2-color: #212121;
-    --dark1-rgb-color: rgba(33,33,33,1);
-    --dark2-rgb-color:rgb(39 39 39 / 70%);
-    --dark3-rgb-color: rgb(15 15 15 / 70%)
+    --dark1-rgb-color: rgba(33, 33, 33, 1);
+    --dark2-rgb-color: rgb(39 39 39 / 70%);
+    --dark3-rgb-color: rgb(15 15 15 / 70%);
 }
 * {
     margin: 0;
@@ -24,9 +23,9 @@
     font-family: sans-serif;
 }
 body {
-    background:var(--gray1-color);
+    background: var(--gray1-color);
 }
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -71,7 +70,7 @@ header nav .nav-links li a:hover {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right,var(--dark2-rgb-color) , var(--dark3-rgb-color)), url(../img/background.png);
+    background: linear-gradient(to right, var(--dark2-rgb-color), var(--dark3-rgb-color)), url(../img/background.png);
     background-size: cover;
 }
 .main__info {
@@ -94,7 +93,7 @@ header nav .nav-links li a:hover {
     top: 0;
     z-index: 1;
 }
-.info__img img{
+.info__img img {
     width: 400px;
     position: absolute;
     top: 50%;
@@ -164,7 +163,7 @@ header nav .nav-links li a:hover {
     border-radius: 100%;
     transition: all 0.4s ease-in-out;
 }
-.controls__btn:hover{
+.controls__btn:hover {
     background-color: var(--red-color);
 }
 .controls__btn--up-control {
@@ -241,62 +240,121 @@ header nav .nav-links li a:hover {
     }
 }
 .rotate-up {
-	-webkit-animation: rotateUp 0.6s ease-in-out both;
-	        animation: rotateUp 0.6s ease-in-out both;
+    -webkit-animation: rotateUp 0.6s ease-in-out both;
+    animation: rotateUp 0.6s ease-in-out both;
 }
 .rotate-down {
-	-webkit-animation: rotateDown 0.6s ease-in-out both;
-	        animation: rotateDown 0.6s ease-in-out both;
+    -webkit-animation: rotateDown 0.6s ease-in-out both;
+    animation: rotateDown 0.6s ease-in-out both;
 }
 @-webkit-keyframes rotateDown {
     0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    -webkit-opacity: 0;
-              opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-opacity: 0;
+        opacity: 0;
     }
     100% {
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-              -webkit-opacity: 1;
-                        opacity: 1;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes rotateDown {
+}
+@keyframes rotateDown {
     0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-              -webkit-opacity: 0;
-                        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-opacity: 0;
+        opacity: 0;
     }
     100% {
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-              -webkit-opacity: 1;
-                        opacity: 1;
-    }
-  }
-  @-webkit-keyframes rotateUp {
-      0% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-      }
-      100% {
         -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-      }
+        transform: translateY(-50%);
+        -webkit-opacity: 1;
+        opacity: 1;
     }
-    @keyframes rotateUp {
-      0% {
+}
+@-webkit-keyframes rotateUp {
+    0% {
         -webkit-transform: translateY(0);
-                transform: translateY(0);
-                -webkit-opacity: 0;
-                          opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-                -webkit-opacity: 1;
-                          opacity: 1;
-      }
+        transform: translateY(0);
     }
+    100% {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+@keyframes rotateUp {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+}
+
+/* media queries */
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .main__slides .slide__caption .title {
+        font-size: 40px;
+    }
+    .main__slides .slide__caption .subtitle {
+        font-size: 12px;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main__info {
+        width: 100%;
+        height: 100%;
+        left: auto;
+        transform: none;
+        top: 0;
+    }
+    .main__controls {
+        z-index: 2;
+    }
+    .info__img img {
+        width: 100%;
+        top: 30%;
+        left: 0;
+    }
+    .info__overlay {
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+    }
+    .info__circle {
+        left: -150vw;
+    }
+    .main__controls {
+        right: 10px;
+    }
+    .main__controls h3 {
+        font-size: 10px;
+    }
+    .controls__btn {
+        width: 15px;
+        height: 15px;
+    }
+    .circle__category--4 {
+        bottom: 150px;
+    }
+    .circle__category--2 {
+        top: 150px;
+    }
+    .circle__category--3 {
+        left: 30px;
+    }
+    .main__slides .slide__caption .subtitle {
+        font-size: 10px;
+    }
+}
