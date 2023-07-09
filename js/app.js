@@ -22,6 +22,7 @@ $(document).ready(function() {
                 return "./img/camera.png";
         }
     }
+    
     const toggleSlideCaption = (direction) => {
         setTimeout(() => {
             document.getElementById("info-img").src = getSrc();
@@ -35,6 +36,7 @@ $(document).ready(function() {
             slideCaption.classList.add("slide__caption--active")
         }
     }
+
     upControl.onclick = function() {
         rotateSum = rotateValue + "rotate(-90deg)";
         circle.style.transform = rotateSum;
@@ -48,6 +50,7 @@ $(document).ready(function() {
         }, 100);
         toggleSlideCaption('up');
     }
+
     downControl.onclick = function() {
         rotateSum = rotateValue + "rotate(90deg)";
         circle.style.transform = rotateSum;
@@ -92,4 +95,11 @@ $(document).ready(function() {
 
     // Establecemos la altura máxima en todas las tarjetas
     bodyCards.css('height', maximumHeight + 'px');
+
+
+    let nav = $('nav');
+    let button = $('.hamburger-menu');
+    button.on('click', function(event) {
+        nav.toggleClass('open');
+    });
 });

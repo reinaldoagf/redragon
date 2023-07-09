@@ -4,10 +4,7 @@
 	font-weight: 400;
 	src: url(https://example.com/MaterialIcons-Regular.eot);
 	/* For IE6-8 */
-	src: local("Material Icons"), local("MaterialIcons-Regular"),
-		url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
-		url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
-		url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+	src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 
 :root {
@@ -77,6 +74,45 @@ header nav .nav-links li a {
 
 header nav .nav-links li a:hover {
 	background: var(--red-color);
+}
+
+header nav .mobile-menu-icon {
+	display: none;
+	position: absolute;
+	right: 2rem;
+	z-index: 1;
+	cursor: pointer;
+}
+
+header nav .mobile-menu-icon .hamburger-menu {
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+}
+
+header nav .mobile-menu-icon .hamburger-menu .line {
+	background-color: var(--white-color);
+	height: 3px;
+	width: 100%;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+nav.open .hamburger-menu .line:nth-of-type(1) {
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg) translate(0.6rem, 0.1rem);
+}
+
+nav.open .hamburger-menu .line:nth-of-type(2) {
+	display: none;
+}
+
+nav.open .hamburger-menu .line:nth-of-type(3) {
+	-webkit-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg) translate(0.6rem, -0.1rem);
 }
 
 .main-wrapper {
@@ -280,7 +316,6 @@ header nav .nav-links li a:hover {
 }
 
 /* card */
-
 .card {
 	position: relative;
 	transform: scale(0.8);
@@ -290,24 +325,28 @@ header nav .nav-links li a:hover {
 	align-items: flex-start;
 	transition: all 0.4s ease-in-out;
 }
+
 .card .slick-prev:before,
 .card .slick-next:before {
 	content: "";
 }
+
 .card .slick-arrow {
-    top: 300px;
-    display: none;
+	top: 300px;
+	display: none;
 }
+
 .card .slick-prev {
-    left: 25px;
+	left: 25px;
 }
+
 .card .slick-next {
-    right: 25px;
+	right: 25px;
 }
 
 .card .slick-arrow svg {
-    width: 30px;
-    height: 30px;
+	width: 30px;
+	height: 30px;
 }
 
 .icon {
@@ -349,27 +388,32 @@ header nav .nav-links li a:hover {
 	color: var(--white-color);
 	line-height: 1.5rem;
 }
+
 .card__body .btn {
-    border: none;
-    background: transparent;
+	border: none;
+	background: transparent;
 }
+
 .card__body .btn ion-icon {
-    color: var(--white-color);
-    font-size: 20px;
-    animation-duration: 0.9s;
-    animation-name: btnAnimation;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+	color: var(--white-color);
+	font-size: 20px;
+	animation-duration: 0.9s;
+	animation-name: btnAnimation;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
+
 /* card */
 /* carousel */
 .slick-current {
 	transform: scale(1);
 	z-index: 1;
 }
-.slick-current .slick-arrow{
+
+.slick-current .slick-arrow {
 	display: block;
 }
+
 .slick-current~.card {
 	transform: scale(0.9) rotate(10deg) translateY(20px);
 }
@@ -379,7 +423,6 @@ header nav .nav-links li a:hover {
 }
 
 /* carousel */
-
 @keyframes fadeInUpSD {
 	0% {
 		opacity: 0;
@@ -391,16 +434,17 @@ header nav .nav-links li a:hover {
 		transform: none;
 	}
 }
+
 @keyframes btnAnimation {
-    from {
-      transform: translateY(0px);
-    }
-  
-    to {
-      transform: translateY(5px);
-    }
-  }
-  
+	from {
+		transform: translateY(0px);
+	}
+
+	to {
+		transform: translateY(5px);
+	}
+}
+
 .rotate-up {
 	-webkit-animation: rotateUp 0.6s ease-in-out both;
 	animation: rotateUp 0.6s ease-in-out both;
@@ -484,6 +528,43 @@ header nav .nav-links li a:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	header nav {
+		width: 90%;
+		margin: 0 auto;
+		padding: 1rem;
+	}
+
+	header nav .nav-links {
+		position: absolute;
+		top: 0;
+		left: 0;
+		flex-direction: column;
+		height: 100vh;
+		align-items: center;
+		padding-top: 3rem;
+		background-color: var(--gray1-color);
+		transform: translateX(-50rem);
+		transition: transform 0.5s ease-in-out;
+	}
+
+	header nav .nav-links li {
+		padding: 2rem 0;
+		width: 100%;
+		margin: 0px;
+	}
+
+	header nav .nav-links li:not(:last-child) {
+		border-bottom: 1px solid #ccc;
+	}
+
+	header .open .nav-links {
+		transform: translateX(-100px);
+	}
+
+	header nav .mobile-menu-icon {
+		display: block;
+	}
+
 	.main-wrapper--desktop {
 		display: none;
 	}
