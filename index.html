@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redragon</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -26,117 +31,274 @@
     </header>
     <main>
         <section class="main">
-            <div class="main__info">
-                <div class="info__overlay"></div>
-                <div class="info__img">
-                    <img src="img/camera.png" alt="info-img" class="info-img" id="info-img">
+            <div class="main-wrapper main-wrapper--desktop">
+                <div class="main-wrapper__info">
+                    <div class="info__overlay"></div>
+                    <div class="info__img">
+                        <img src="img/camera.png" alt="info-img" class="info-img" id="info-img">
+                    </div>
+                    <div class="info__circle" id="circle">
+                        <div class="circle__category circle__category--1">
+                            <img src="./img/camera-icon.png" alt="camera" />
+                            <div>
+                                <h1>Cámaras</h1>
+                                <p class="description">Si te atrae el streaming, éste es el lugar para ti. ¡Adelante,
+                                    anímate!.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="circle__category circle__category--2">
+                            <img src="./img/controls-icon.png" alt="controls" />
+                            <div>
+                                <h1>Mandos</h1>
+                                <p class="description">Tus manos saben lo que necesitan; escúchalas. Para consolas y PC.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="circle__category circle__category--3">
+                            <img src="./img/mouse-icon.png" alt="mouse" />
+                            <div>
+                                <h1>Mouse</h1>
+                                <p class="description">Precisión, rapidez, comodidad, durabilidad y mucha luz. Ratones
+                                    para
+                                    ganar.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="circle__category circle__category--4">
+                            <img src="./img/earphones-icon.png" alt="earphones" />
+                            <div>
+                                <h1>Audio</h1>
+                                <p class="description">Auriculares y micrófonos que liberan toda la fuerza del sonido.
+                                    ¡Conócelos!.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="info__circle" id="circle">
-                    <div class="circle__category circle__category--1">
-                        <img src="./img/camera-icon.png" alt="camera">
-                        <div>
-                            <h1>Cámaras</h1>
-                            <p class="description">Si te atrae el streaming, éste es el lugar para ti. ¡Adelante,
-                                anímate!.
-                            </p>
-                        </div>
+                <div class="main-wrapper__controls">
+                    <img src="./img/arrow.png" alt="arrow" class="controls__btn controls__btn--up-control"
+                        id="up-control">
+                    <h3>Categorías</h3>
+                    <img src="./img/arrow.png" alt="arrow" class="controls__btn controls__btn--down-control"
+                        id="down-control">
+                </div>
+                <div class="main-wrapper__slides">
+                    <div id="slide__caption--0" class="slide__caption slide__caption--active">
+                        <h1 class="title">Cámara</h1>
+                        <p class="subtitle mb-5">
+                            Captura tu pasión por el juego con nuestra cámara web especializada para gamers. Diseñada
+                            para
+                            ofrecerte una calidad de imagen excepcional y una transmisión en tiempo real sin
+                            interrupciones,
+                            esta cámara te permitirá mostrar tus habilidades a todo el mundo. Con una resolución nítida,
+                            enfoque automático y capacidad de grabación de video en alta definición, serás el centro de
+                            atención en tus transmisiones y videollamadas. ¡Destaca entre los demás jugadores con
+                            nuestra
+                            cámara web gamer y lleva tu presencia en línea al siguiente nivel!
+                        </p>
+                        <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/"
+                            target="_self" class="outline-btn" tabindex="0">
+                            Ver más
+                        </a>
                     </div>
-                    <div class="circle__category circle__category--2">
-                        <img src="./img/controls-icon.png" alt="controls">
-                        <div>
-                            <h1>Mandos</h1>
-                            <p class="description">Tus manos saben lo que necesitan; escúchalas. Para consolas y PC.</p>
-                        </div>
+                    <div id="slide__caption--1" class="slide__caption">
+                        <h1 class="title">Audifonos Gamer</h1>
+                        <p class="subtitle mb-5">
+                            Sumérgete en el mundo del juego con nuestros audífonos gamer de primera clase. Con sonido
+                            envolvente de alta calidad,
+                            comodidad duradera y micrófono incorporado, estos audífonos te transportarán directamente al
+                            centro de la acción.
+                            Obtén una ventaja auditiva y sumérgete en una experiencia de juego inmersiva con nuestros
+                            audífonos gamer.
+                            ¡Prepárate para escuchar cada detalle y comunicarte con claridad en tus partidas más
+                            intensas!
+                        </p>
+                        <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/"
+                            target="_self" class="outline-btn" tabindex="0">
+                            Ver más
+                        </a>
                     </div>
-                    <div class="circle__category circle__category--3">
-                        <img src="./img/mouse-icon.png" alt="mouse">
-                        <div>
-                            <h1>Mouse</h1>
-                            <p class="description">Precisión, rapidez, comodidad, durabilidad y mucha luz. Ratones para
-                                ganar.
-                            </p>
-                        </div>
+                    <div id="slide__caption--2" class="slide__caption">
+                        <h1 class="title">Mouse gamer</h1>
+                        <p class="subtitle mb-5">
+                            ¡Mejora tu juego con el mouse gamer definitivo! Este mouse de alto rendimiento combina
+                            precisión
+                            milimétrica,
+                            velocidad de respuesta ultrarrápida y diseño ergonómico. Domina el campo de batalla virtual
+                            con
+                            este poderoso aliado en tus manos.
+                            ¡Lleva tu juego al siguiente nivel ahora!
+                        </p>
+                        <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/"
+                            target="_self" class="outline-btn" tabindex="0">
+                            Ver más
+                        </a>
                     </div>
-                    <div class="circle__category circle__category--4">
-                        <img src="./img/earphones-icon.png" alt="earphones">
-                        <div>
-                            <h1>Audio</h1>
-                            <p class="description">Auriculares y micrófonos que liberan toda la fuerza del sonido.
-                                ¡Conócelos!.
-                            </p>
-                        </div>
+                    <div id="slide__caption--3" class="slide__caption">
+                        <h1 class="title">Mandos</h1>
+                        <p class="subtitle mb-5">
+                            Potencia tu experiencia de juego con nuestro mando gamer de última generación. Diseñado para
+                            brindar precisión y comodidad, este control te permitirá dominar cualquier juego con
+                            facilidad.
+                            Con botones programables, vibración inmersiva y conectividad inalámbrica, disfrutarás de una
+                            experiencia de juego fluida y emocionante. ¡Eleva tu nivel de juego con nuestro mando gamer
+                            y
+                            conquista la victoria con estilo!
+                        </p>
+                        <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/"
+                            target="_self" class="outline-btn" tabindex="0">
+                            Ver más
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="main__controls">
-                <img src="./img/arrow.png" alt="arrow" class="controls__btn controls__btn--up-control" id="up-control">
-                <h3>Categorías</h3>
-                <img src="./img/arrow.png" alt="arrow" class="controls__btn controls__btn--down-control" id="down-control">
-            </div>
-
-            <div class="main__slides">
-                <div id="slide__caption--0" class="slide__caption slide__caption--active">
-                    <h1 class="title">Cámara</h1>
-                    <p class="subtitle mb-5">
-                        Captura tu pasión por el juego con nuestra cámara web especializada para gamers. Diseñada para
-                        ofrecerte una calidad de imagen excepcional y una transmisión en tiempo real sin interrupciones,
-                        esta cámara te permitirá mostrar tus habilidades a todo el mundo. Con una resolución nítida,
-                        enfoque automático y capacidad de grabación de video en alta definición, serás el centro de
-                        atención en tus transmisiones y videollamadas. ¡Destaca entre los demás jugadores con nuestra
-                        cámara web gamer y lleva tu presencia en línea al siguiente nivel!
-                    </p>
-                    <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self"
-                        class="outline-btn" tabindex="0">
-                        Ver más
-                    </a>
-                </div>
-                <div id="slide__caption--1" class="slide__caption">
-                    <h1 class="title">Audifonos Gamer</h1>
-                    <p class="subtitle mb-5">
-                        Sumérgete en el mundo del juego con nuestros audífonos gamer de primera clase. Con sonido
-                        envolvente de alta calidad,
-                        comodidad duradera y micrófono incorporado, estos audífonos te transportarán directamente al
-                        centro de la acción.
-                        Obtén una ventaja auditiva y sumérgete en una experiencia de juego inmersiva con nuestros
-                        audífonos gamer.
-                        ¡Prepárate para escuchar cada detalle y comunicarte con claridad en tus partidas más intensas!
-                    </p>
-                    <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self"
-                        class="outline-btn" tabindex="0">
-                        Ver más
-                    </a>
-                </div>
-                <div id="slide__caption--2" class="slide__caption">
-                    <h1 class="title">Mouse gamer</h1>
-                    <p class="subtitle mb-5">
-                        ¡Mejora tu juego con el mouse gamer definitivo! Este mouse de alto rendimiento combina precisión
-                        milimétrica,
-                        velocidad de respuesta ultrarrápida y diseño ergonómico. Domina el campo de batalla virtual con
-                        este poderoso aliado en tus manos.
-                        ¡Lleva tu juego al siguiente nivel ahora!
-                    </p>
-                    <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self"
-                        class="outline-btn" tabindex="0">
-                        Ver más
-                    </a>
-                </div>
-                <div id="slide__caption--3" class="slide__caption">
-                    <h1 class="title">Mandos</h1>
-                    <p class="subtitle mb-5">
-                        Potencia tu experiencia de juego con nuestro mando gamer de última generación. Diseñado para
-                        brindar precisión y comodidad, este control te permitirá dominar cualquier juego con facilidad.
-                        Con botones programables, vibración inmersiva y conectividad inalámbrica, disfrutarás de una
-                        experiencia de juego fluida y emocionante. ¡Eleva tu nivel de juego con nuestro mando gamer y
-                        conquista la victoria con estilo!
-                    </p>
-                    <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self"
-                        class="outline-btn" tabindex="0">
-                        Ver más
-                    </a>
+            <div class="main-wrapper main-wrapper--mobile">
+                <div class="main-wrapper__carousel" id="main-wrapper__carousel">
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="img/camera.png" alt="info-img" />
+                        </div>
+                        <div class="card__body">
+                            <h2>Cámaras</h2>
+                            <div class="slick-arrow slick-prev">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                             <div class="slick-arrow slick-next">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 3.49691e-06C31.0457 5.4282e-06 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 1.56562e-06 31.0457 3.49691e-06 20C5.4282e-06 8.95431 8.95431 1.56562e-06 20 3.49691e-06ZM23.8794 26.4802C24.2446 26.8945 24.8368 26.8945 25.202 26.4802L30.413 20.5692C30.7782 20.1549 30.7782 19.4833 30.413 19.069L25.202 13.1579C24.8368 12.7437 24.2446 12.7437 23.8794 13.1579C23.5142 13.5722 23.5142 14.2439 23.8794 14.6582L27.5088 18.7752L10.3135 18.7752C9.7612 18.7752 9.31348 19.2229 9.31348 19.7752C9.31348 20.3275 9.76119 20.7752 10.3135 20.7752L27.5862 20.7752L23.8794 24.98C23.5142 25.3943 23.5142 26.066 23.8794 26.4802Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                            <div class="card__body__info">
+                                <div class="icon">
+                                    <ion-icon name="camera-outline"></ion-icon>
+                                </div>
+                                <p>
+                                    Si te atrae el streaming, éste es el lugar para ti. ¡Adelante, anímate!.
+                                </p>
+                            </div>
+                            <div class="card__body__button">
+                                <button class="btn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="img/controls.png" alt="info-img" />
+                        </div>
+                        <div class="card__body">
+                            <h2>Mandos</h2>
+                            <div class="slick-arrow slick-prev">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                             <div class="slick-arrow slick-next">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 3.49691e-06C31.0457 5.4282e-06 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 1.56562e-06 31.0457 3.49691e-06 20C5.4282e-06 8.95431 8.95431 1.56562e-06 20 3.49691e-06ZM23.8794 26.4802C24.2446 26.8945 24.8368 26.8945 25.202 26.4802L30.413 20.5692C30.7782 20.1549 30.7782 19.4833 30.413 19.069L25.202 13.1579C24.8368 12.7437 24.2446 12.7437 23.8794 13.1579C23.5142 13.5722 23.5142 14.2439 23.8794 14.6582L27.5088 18.7752L10.3135 18.7752C9.7612 18.7752 9.31348 19.2229 9.31348 19.7752C9.31348 20.3275 9.76119 20.7752 10.3135 20.7752L27.5862 20.7752L23.8794 24.98C23.5142 25.3943 23.5142 26.066 23.8794 26.4802Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                            <div class="card__body__info">
+                                <div class="icon">
+                                    <ion-icon name="game-controller-outline"></ion-icon>
+                                </div>
+                                <p>
+                                    Tus manos saben lo que necesitan; escúchalas. Para consolas y PC.
+                                </p>
+                            </div>
+                            <div class="card__body__button">
+                                <button class="btn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="img/mouse.png" alt="info-img" />
+                        </div>
+                        <div class="card__body">
+                            <h2>Mouse</h2>
+                            <div class="slick-arrow slick-prev">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                             <div class="slick-arrow slick-next">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 3.49691e-06C31.0457 5.4282e-06 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 1.56562e-06 31.0457 3.49691e-06 20C5.4282e-06 8.95431 8.95431 1.56562e-06 20 3.49691e-06ZM23.8794 26.4802C24.2446 26.8945 24.8368 26.8945 25.202 26.4802L30.413 20.5692C30.7782 20.1549 30.7782 19.4833 30.413 19.069L25.202 13.1579C24.8368 12.7437 24.2446 12.7437 23.8794 13.1579C23.5142 13.5722 23.5142 14.2439 23.8794 14.6582L27.5088 18.7752L10.3135 18.7752C9.7612 18.7752 9.31348 19.2229 9.31348 19.7752C9.31348 20.3275 9.76119 20.7752 10.3135 20.7752L27.5862 20.7752L23.8794 24.98C23.5142 25.3943 23.5142 26.066 23.8794 26.4802Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                            <div class="card__body__info">
+                                <div class="icon">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                </div>
+                                <p>
+                                    Precisión, rapidez, comodidad, durabilidad y mucha luz. Ratones
+                                    para
+                                    ganar.
+                                </p>
+                            </div>
+                            <div class="card__body__button">
+                                <button class="btn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="img/earphones.png" alt="info-img" />
+                        </div>
+                        <div class="card__body">
+                            <h2>Audio</h2>
+                            <div class="slick-arrow slick-prev">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 40C8.9543 40 -2.7141e-06 31.0457 -1.74846e-06 20C-7.8281e-07 8.9543 8.95431 -2.7141e-06 20 -1.74846e-06C31.0457 -7.8281e-07 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM16.1206 13.5198C15.7554 13.1055 15.1632 13.1055 14.798 13.5198L9.58704 19.4308C9.22182 19.8451 9.22182 20.5168 9.58704 20.931L14.798 26.8421C15.1632 27.2563 15.7554 27.2563 16.1206 26.8421C16.4858 26.4278 16.4858 25.7561 16.1206 25.3418L12.4912 21.2248L29.6865 21.2248C30.2388 21.2248 30.6865 20.7771 30.6865 20.2248C30.6865 19.6725 30.2388 19.2248 29.6865 19.2248L12.4138 19.2248L16.1206 15.02C16.4858 14.6057 16.4858 13.934 16.1206 13.5198Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                             <div class="slick-arrow slick-next">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M20 3.49691e-06C31.0457 5.4282e-06 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 1.56562e-06 31.0457 3.49691e-06 20C5.4282e-06 8.95431 8.95431 1.56562e-06 20 3.49691e-06ZM23.8794 26.4802C24.2446 26.8945 24.8368 26.8945 25.202 26.4802L30.413 20.5692C30.7782 20.1549 30.7782 19.4833 30.413 19.069L25.202 13.1579C24.8368 12.7437 24.2446 12.7437 23.8794 13.1579C23.5142 13.5722 23.5142 14.2439 23.8794 14.6582L27.5088 18.7752L10.3135 18.7752C9.7612 18.7752 9.31348 19.2229 9.31348 19.7752C9.31348 20.3275 9.76119 20.7752 10.3135 20.7752L27.5862 20.7752L23.8794 24.98C23.5142 25.3943 23.5142 26.066 23.8794 26.4802Z"
+                                      fill="#fff" />
+                                </svg>
+                             </div>
+                            <div class="card__body__info">
+                                <div class="icon">
+                                    <ion-icon name="headset-outline"></ion-icon>
+                                </div>
+                                <p>
+                                    Auriculares y micrófonos que liberan toda la fuerza del sonido.
+                                    ¡Conócelos!.
+                                </p>
+                            </div>
+                            <div class="card__body__button">
+                                <button class="btn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
